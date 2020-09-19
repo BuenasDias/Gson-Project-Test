@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit_nickname"
+        android:hint="nickname"
+        android:padding="8dp"
+        android:background="@drawable/shape_rect"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"/>
+
+    <EditText
+
+        android:id="@+id/edit_address"
+        android:inputType="text"
+        android:hint="address"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:background="@drawable/shape_rect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"/>
+
+    <EditText
+        android:id="@+id/edit_phone"
+        android:inputType="number"
+        android:hint="phone"
+        android:layout_marginTop="8dp"
+        android:imeOptions="actionDone"
+        android:padding="8dp"
+        android:background="@drawable/shape_rect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edit_age"
+        android:inputType="number"
+        android:hint="age"
+        android:layout_marginTop="8dp"
+        android:imeOptions="actionDone"
+        android:padding="8dp"
+        android:background="@drawable/shape_rect"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_save_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_gravity="center"
+              />
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:background="@drawable/shape_rect"
+            >
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:id="@+id/search_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEARCH"
+                android:layout_gravity="center"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/edit_search_nickname"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"/>
+
+
+            <Button
+                android:id="@+id/btn_search_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:text="search"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rect"
+    android:layout_marginTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/name"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "/>
+        
+    <TextView
+        android:id="@+id/address"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address: "/>
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone: "/>
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age: "/>
+
+    <Button
+        android:id="@+id/btn_delete_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>
+
+
+
+</LinearLayout>
